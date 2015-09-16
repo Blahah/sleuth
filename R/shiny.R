@@ -122,10 +122,11 @@ sleuth_live <- function(obj, ...) {
         
     
       ####
+      mat("HELLO")  # DEBUG
       tabPanel('MA plot',
       fluidRow(
         column(12,
-          p(h3('MA plot'), "Plot of abundance versus fixed effect (e.g. fold change). Select a set of transcripts to explore their variance across samples. ")
+          p(h3('MA plot'), "Plot of abundance versus fixed effect (e.g. fold change). Select a set of transcripts to explore their variance across samples. IF YOU SEE THIS CHANGES WERE MADE")  # DEBUG
           ),
           offset = 1),
         fluidRow(
