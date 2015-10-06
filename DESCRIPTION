@@ -1,25 +1,25 @@
 Package: sleuth
 Title: Tools for investigating RNA-Seq
-Version: 0.27.3
-Authors@R: c(person("Harold", "Pimentel", , "haroldpimentel@gmail.com", role = c("aut", "cre")))
+Version: 0.28.0
+Authors@R: c(person("Harold", "Pimentel", , "haroldpimentel@gmail.com", role = c("aut", "cre")), person("Richard", "Smith-Unna", , "rds45@cam.ac.uk", role = c("aut")))
 Description: Investigate transcript abundance from "kallisto" and differential expression analysis from RNA-Seq data.
 License: GPL-3
 LazyData: true
-URL: https://github.com/pachterlab/sleuth
-BugReports: https://github.com/pachterlab/sleuth/issues
-Depends: 
+URL: https://github.com/blahah/sleuth
+BugReports: https://github.com/blahah/sleuth/issues
+Depends:
     R (>= 3.2.1),
     methods,
     ggplot2,
     dplyr
-Imports: 
+Imports:
     data.table,
     tidyr,
     reshape2,
     rhdf5,
     lazyeval,
     shiny
-Suggests: 
+Suggests:
     MASS,
     testthat,
     knitr
