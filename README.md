@@ -1,7 +1,7 @@
 # sleuth: inspect your RNA-Seq
 
 Investigate transcript abundance from
-[kallisto](https://github.com/pimentel/kallisto) and differential expression
+[kallisto](https://github.com/pimentel/kallisto) or [sailfish](http://www.cs.cmu.edu/~ckingsf/software/sailfish/) and differential expression
 analysis from RNA-Seq data.
 
 # Installation
