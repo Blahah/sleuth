@@ -1,6 +1,6 @@
 Package: sleuth
 Title: Tools for investigating RNA-Seq
-Version: 0.28.0
+Version: 0.28.0.fish
 Authors@R: c(person("Harold", "Pimentel", , "haroldpimentel@gmail.com", role = c("aut", "cre")), person("Richard", "Smith-Unna", , "rds45@cam.ac.uk", role = c("aut")))
 Description: Investigate transcript abundance from "kallisto", "sailfish" or "salmon" and differential expression analysis from RNA-Seq data.
 License: GPL-3
