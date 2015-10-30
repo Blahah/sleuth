@@ -1,47 +1,10 @@
-#' Constructor for a 'sleuth' object using sailfish data
-#'
-#' Converts sailfish results to kallisto HDF5
-#' format, then return the results of \code{\link[sleuth]{sleuth_prep}} on
-#' the converted data.
-#'
-#' See \code{\link[sleuth]{sleuth_prep}} for parameters other than sf_dirs.
+
+#' Convert sailfish/salmon results for one or more samples to kallisto HDF5
 #'
 #' @param sf_dirs a character vector of length greater than one where each
 #' string points to a sailfish output directory
 #' @export
-sleuth_prep_sailfish <- function(
-  sf_dirs,
-  sample_to_covariates,
-  full_model,
-  filter_fun = basic_filter,
-  target_mapping = NULL,
-  max_bootstrap = NULL,
-  ...) {
-
-  # check sf_dirs
-  if( !is(sf_dirs, 'character') ) {
-    stop(paste0('"', substitute(sf_dirs),
-                '" (sf_dirs) is must be a character vector.'))
-  }
-
-  kal_dirs <- package_sf_as_kal(sf_dirs)
-
-  library("sleuth")
-  sleuth::sleuth_prep(
-    kal_dirs,
-    sample_to_covariates,
-    full_model,
-    filter_fun,
-    target_mapping,
-    max_bootstrap
-  )
-}
-
-#' Convert sailfish results for one or more samples to kallisto HDF5
-#'
-#' @param sf_dirs a character vector of length greater than one where each
-#' string points to a sailfish output directory
-package_sf_as_kal <- function(sf_dirs) {
+prepare_fish <- function(sf_dirs) {
   sapply(sf_dirs, sf_to_hdf5)
   sf_dirs
 }
