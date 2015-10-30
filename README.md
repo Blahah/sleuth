@@ -1,8 +1,6 @@
-# sleuth: inspect your RNA-Seq
 
-Investigate RNA-Seq transcript abundance from
-[kallisto](https://github.com/pimentel/kallisto) and perform differential expression
-analysis.
+Investigate transcript abundance from
+[kallisto](https://github.com/pimentel/kallisto), [sailfish](http://www.cs.cmu.edu/~ckingsf/software/sailfish/) or [salmon](http://sailfish.readthedocs.org/en/latest/salmon.html) and perform differential expression analysis.
 
 # Installation
 
@@ -11,7 +9,7 @@ The easiest way to install is using the `devtools` package through Bioconductor.
 ```{r}
 source("http://bioconductor.org/biocLite.R")
 biocLite("devtools")    # only if devtools not yet installed
-biocLite("pachterlab/sleuth")
+biocLite("blahah/sleuth")
 ```
 
 These commands will install `sleuth` along with all of its dependencies. You
